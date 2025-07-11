@@ -16,7 +16,6 @@
 ---
 
 ## ⚡ Quick Start
-
 ### 1. 安装依赖
 ```bash
 # 1) OpenSlide 二进制
@@ -59,18 +58,20 @@ TileGenerator(slide).execute()
 ```
 运行后目录结构：
 out/
-├── *.png               # 256×256 patches
-├── tilecrossed_*.png   # 带网格预览图
-├── mask_*.png          # 前景掩膜
-└── tile_selection.tsv  # 坐标 & Keep 标记
+├── *.png               # 256×256 patches  
+├── tilecrossed_*.png   # 带网格预览图  
+├── mask_*.png          # 前景掩膜  
+└── tile_selection.tsv  # 坐标 & Keep 标记  
 
 
-### 🖼️ 结果示意
+结果
 
 | 原图裁剪 | 前景掩膜 | 网格预览 & 坐标 |
 |---|---|---|
 | ![masked](out/img/masked.png) | ![crop](out/img/crop.png) | ![tile_cross](out/img/title_selection.png) |
 | Otsu 生成的组织掩膜 | 从 WSI 裁剪的局部区域 | 网格覆盖与被选 tile（蓝叉） |
+
+---
 
 ## 📚 上游项目 & 引用
 
